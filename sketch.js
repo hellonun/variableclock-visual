@@ -24,6 +24,8 @@ function setup() {
 
   strokeWeight(8);
   millis();
+  frameRate(30); 
+  noCursor(); 
 }
 
 function draw() {
