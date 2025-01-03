@@ -19,7 +19,7 @@ let pOffset = 0;
 let x = 0;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(720, 720);
   background(bg);
 
   strokeWeight(8);
@@ -82,7 +82,7 @@ function draw() {
     noStroke();
     textAlign(LEFT, CENTER);
     textSize(40);
-    textX = 30;
+    textX = width/15;
     textY = (height / 4) * (i + 0.5);
     text(nf(counts[i], 2, 3), textX, textY);
 
@@ -96,8 +96,8 @@ function draw() {
 
     /////////////////
 
-    if (pointX > width - 75) {
-      pointX = width - 75;
+    if (pointX > width * 0.85) {
+      pointX = width * 0.85;
       // at the end
       for (let j = 0; j < points[i].length; j++) {
         // x stays the same
